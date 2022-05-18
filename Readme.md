@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Ирина Сон](https://up.htmlacademy.ru/htmlcss/34/user/2067423).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Панасюк] (https://htmlacademy.ru/profile/sasha_oldsport)
 
 ---
 
