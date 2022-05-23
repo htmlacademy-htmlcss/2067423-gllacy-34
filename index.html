@@ -49,40 +49,42 @@
       <h1 class="visually-hidden">Glasy Shop</h1>
       <section class="carousel">
         <h2 class="visually-hidden">Карусель с тремя видами мороженого</h2>
-        <ul class="card-list">
+        <img class="slider-image" src="" alt="три вида мороженного">
+        <button class="slider-button slider-prev"></button>
+         <span class="visually-hidden">Предыдущий слайд</span>
+        <button class="slider-button slider-next">
+         <span class="visually-hidden">Следующий слайд</span>
+        </button>
+        <ol class="card-list">
           <li class="card">
             <h3 class="card-title">Нежный пломбир с клубничным джемом</h3>
             <p class="card-description">Натуральное мороженое из свежих сливок
               и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
               <a class="button button-buy" href="#">Заказать</a>
-                <img class="ice-cream strawberry" src="" alt="Мороженое с клубничным джемом" width="
-              350" height="507">
-              <button class="slider-button slider-prev">
-               <span class="visually-hidden">Предыдущий слайд</span>
+                <img class="ice-cream strawberry" src="" alt="Мороженое с клубничным джемом">
+              <button class="slider-button current">
+               <span class="visually-hidden">клубничное мороженое</span>
               </button>
-              <button class="slider-button slider-next">
-               <span class="visually-hidden">Следующий слайд</span>
-              </button>
-              <a class="social-network" href="https://t.me/htmlacademy">Telegram</a>
-              <a class="social-network" href="https://vk.com/htmlacademy">Vkontakte</a>
-              <a class="social-network" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+             <p class="social-media">
+              <a class="social-media-link" href="https://t.me/htmlacademy">Telegram</a>
+              <a class="social-media-link" href="https://vk.com/htmlacademy">Vkontakte</a>
+              <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+            </p> 
           </li>
           <li class="card">
             <h3 class="card-title">Сливочное мороженое со вкусом банана</h3>
             <p class="card-description">Сливочное мороженое с ярким банановым вкусом подарит 
               вам свежесть и наслаждение даже в самый жаркий летний день.</p>
               <a class="button button-buy" href="#">Заказать</a>
-                <img class="ice-cream strawberry" src="" alt="Мороженое со вкусом банана" width="
-              350" height="507">  
-              <button class="slider-button slider-prev">
-                <span class="visually-hidden">Предыдущий слайд</span>
+                <img class="ice-cream strawberry" src="" alt="Мороженое со вкусом банана">  
+              <button class="slider-button ">
+                <span class="visually-hidden">банановое морожение</span>
                </button>
-               <button class="slider-button slider-next">
-                <span class="visually-hidden">Следующий слайд</span>
-               </button> 
-               <a class="social-network" href="https://t.me/htmlacademy">Telegram</a>
-               <a class="social-network" href="https://vk.com/htmlacademy">Vkontakte</a>
-               <a class="social-network" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>                        
+             <p class="social-media">
+                <a class="social-media-link" href="https://t.me/htmlacademy">Telegram</a>
+                <a class="social-media-link" href="https://vk.com/htmlacademy">Vkontakte</a>
+                <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+             </p>                        
           </li>
           <li class="card">
             <h3 class="card-title">Карамельный пломбир
@@ -90,20 +92,17 @@
             <p class="card-description">Необычный сладкий десерт с карамельным топпингом и кусочками 
               зефира завоюет сердца сладкоежек всех возрастов.</p>
               <a class="button button-buy" href="#">Заказать</a>
-                <img class="ice-cream strawberry" src="" alt="Мороженое с маршмеллоу" width="
-              350" height="507">
-              <button class="slider-button slider-prev">
-                <span class="visually-hidden">Предыдущий слайд</span>
+                <img class="ice-cream strawberry" src="" alt="Мороженое с маршмеллоу">
+              <button class="slider-button">
+                <span class="visually-hidden">Мороженое с маршмеллоу</span>
                </button>
-               <button class="slider-button slider-next">
-                <span class="visually-hidden">Следующий слайд</span>
-               </button>
-               <a class="social-network" href="https://t.me/htmlacademy">Telegram</a>
-               <a class="social-network" href="https://vk.com/htmlacademy">Vkontakte</a>
-               <a class="social-network" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+             <p class="social-media">
+                <a class="social-media-link" href="https://t.me/htmlacademy">Telegram</a>
+                <a class="social-media-link" href="https://vk.com/htmlacademy">Vkontakte</a>
+                <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+             </p> 
           </li>
-        </ul>
-        <ul>
+        </ol>
       </section>
       <section class="raffle-of-gifts">
         <h2 class="visually-hidden">Розыгрыш подарков</h2>
@@ -211,8 +210,9 @@
             в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
           <form class="subcribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="email" type="email" name="e-mail">
-            <button class="button-subscribe">Отправить</button>
+            <label for="user-email"></label>
+            <input class="email" type="email" name="e-mail" id="user-email" placeholder="email@examplecom">
+            <button class="button-subscribe" type="submit">Отправить</button>
           </form>
         </article>
       </section>
@@ -223,15 +223,15 @@
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
          <p>
           <label for="delivery-date">Дата</label>
-          <input type="text" id="delivety-date" placeholder="01.04.2020">
+          <input type="text" id="delivery-date" placeholder="01.04.2020">
          </p>
          <p>
           <label for="delivery-phone">Телефон</label>
-          <input type="text" id="delivety-phone" placeholder="+7 800 999-00-00">
+          <input type="text" id="delivery-phone" placeholder="+7 800 999-00-00">
          </p>
          <p>
           <label for="delivery-adress">Адрес</label>
-          <input type="text" id="delivety-adress" placeholder="ул. Большая Конюшенная, 19/8">
+          <input type="text" id="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
          </p>
          <button class="button-subscribe">Отправить</button>
         </form>
@@ -249,6 +249,27 @@
         <a class="button-feedback" href="#">Форма обратной связи</a>
       </section>
     </main>
+
+    <footer class="social-media">
+      <section>
+        <h2 class="visually-hidden">Социальные сети</h2>
+          <a class="social-media-link" href="https://t.me/htmlacademy">Telegram</a>
+          <a class="social-media-link" href="https://vk.com/htmlacademy">Vkontakte</a>
+          <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+      </section>    
+      <section class="documentation">
+        <h2 class="visually-hidden">Документация</h2>
+          <span><img class="suppliers" src="" alt="heart">
+          <a class="suppliers" href="#">Для поставщиков</a></span>
+          <a class="about-production" href="#">О производстве</a>
+          <a class="our-documents" href="#">Наши документы</a>
+          <a class="eco-standart" href="#">Экологические стандарты</a>
+      </section>
+      <section class="about-author">
+        <a class="poject" href="https://htmlacademy.ru/">.htmlacademy</a>
+        <p class="by">Сделано в .html academy © 2021</p>      
+      </section>
+    </footer>
 
   </body>
 </html>
