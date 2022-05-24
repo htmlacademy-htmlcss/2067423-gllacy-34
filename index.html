@@ -65,11 +65,6 @@
               <button class="slider-button current">
                <span class="visually-hidden">клубничное мороженое</span>
               </button>
-             <p class="social-media">
-              <a class="social-media-link" href="https://t.me/htmlacademy">Telegram</a>
-              <a class="social-media-link" href="https://vk.com/htmlacademy">Vkontakte</a>
-              <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
-            </p> 
           </li>
           <li class="card">
             <h3 class="card-title">Сливочное мороженое со вкусом банана</h3>
@@ -79,12 +74,7 @@
                 <img class="ice-cream strawberry" src="" alt="Мороженое со вкусом банана">  
               <button class="slider-button ">
                 <span class="visually-hidden">банановое морожение</span>
-               </button>
-             <p class="social-media">
-                <a class="social-media-link" href="https://t.me/htmlacademy">Telegram</a>
-                <a class="social-media-link" href="https://vk.com/htmlacademy">Vkontakte</a>
-                <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
-             </p>                        
+               </button>                       
           </li>
           <li class="card">
             <h3 class="card-title">Карамельный пломбир
@@ -96,13 +86,19 @@
               <button class="slider-button">
                 <span class="visually-hidden">Мороженое с маршмеллоу</span>
                </button>
-             <p class="social-media">
-                <a class="social-media-link" href="https://t.me/htmlacademy">Telegram</a>
-                <a class="social-media-link" href="https://vk.com/htmlacademy">Vkontakte</a>
-                <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
-             </p> 
           </li>
         </ol>
+        <ul class="social-media">
+            <li class="social-media-item">
+             <a class="social-media-link" href="https://t.me/htmlacademy">Telegram</a>
+            </li>
+            <li class="social-media-item">
+              <a class="social-media-link" href="https://vk.com/htmlacademy">Vkontakte</a>
+            </li>
+            <li class="social-media-item">
+              <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+            </li>       
+        </ul>
       </section>
       <section class="raffle-of-gifts">
         <h2 class="visually-hidden">Розыгрыш подарков</h2>
@@ -131,7 +127,7 @@
             <p class="name-item">Малинка</p>
             <p class="description-item">Сливочное мороженое с малиновым джемом</p>
             <b class="item-price">310 ₽/кг</b>
-            <a class="purchase-link" href="#">
+            <a class="product-card-button button" href="#">
              <span class="visually-hidden">
                 Корзина
              </span>
@@ -142,7 +138,7 @@
             <p class="name-item">Фисташка</p>
             <p class="description-item">Фисташковый пломбир с кусочками шоколада</p>
             <b class="item-price">340 ₽/кг</b>
-            <a class="purchase-link" href="#">
+            <a class="product-card-button button" href="#">
              <span class="visually-hidden">
                 Корзина
              </span>
@@ -153,7 +149,7 @@
             <p class="name-item">Черника</p>
             <p class="description-item">Крем-брюле с черничным джемом</p>
             <b class="item-price">330 ₽/кг</b>
-            <a class="purchase-link" href="#">
+            <a class="product-card-button button" href="#">
               <span class="visually-hidden">
                 Корзина
               </span>
@@ -165,7 +161,7 @@
             <p class="description-item">Ванильный пломбир
               со сладкой посыпкой</p>
             <b class="item-price">320 ₽/кг</b>
-            <a class="purchase-link" href="#">
+            <a class="product-card-button button" href="#">
               <span class="visually-hidden">
                 Корзина
               </span>
@@ -221,18 +217,18 @@
         <p class="description-delivery">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? 
           Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-         <p>
+         <div>
           <label for="delivery-date">Дата</label>
           <input type="text" id="delivery-date" placeholder="01.04.2020">
-         </p>
-         <p>
+         </div>
+         <div>
           <label for="delivery-phone">Телефон</label>
           <input type="text" id="delivery-phone" placeholder="+7 800 999-00-00">
-         </p>
-         <p>
+         </div>
+         <div>
           <label for="delivery-adress">Адрес</label>
           <input type="text" id="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
-         </p>
+         </div>
          <button class="button-subscribe">Отправить</button>
         </form>
       </section>
@@ -250,20 +246,44 @@
       </section>
     </main>
 
-    <footer class="social-media">
-      <section>
-        <h2 class="visually-hidden">Социальные сети</h2>
-          <a class="social-media-link" href="https://t.me/htmlacademy">Telegram</a>
-          <a class="social-media-link" href="https://vk.com/htmlacademy">Vkontakte</a>
-          <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+    <footer class="page-footer">
+      <section class="footer-social">
+        <h2 class="visually-hiddene">Социальные сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>     
+      </ul>
       </section>    
-      <section class="documentation">
+      <section class="footer-documentation">
         <h2 class="visually-hidden">Документация</h2>
-          <span><img class="suppliers" src="" alt="heart">
-          <a class="suppliers" href="#">Для поставщиков</a></span>
-          <a class="about-production" href="#">О производстве</a>
-          <a class="our-documents" href="#">Наши документы</a>
-          <a class="eco-standart" href="#">Экологические стандарты</a>
+        <ul class="footer-documents">
+          <li class="footer-doc-item">
+           <span><img class="suppliers" src="" alt="heart">
+           <a class="suppliers" href="#">Для поставщиков</a></span>
+          </li>
+          <li class="footer-doc-item">
+            <a class="about-production" href="#">О производстве</a>
+          </li>
+          <li class="footer-doc-item">
+            <a class="about-production" href="#">Наши документы</a>
+          </li>
+          <li class="footer-doc-item">
+            <a class="our-documents" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
       </section>
       <section class="about-author">
         <a class="poject" href="https://htmlacademy.ru/">.htmlacademy</a>
