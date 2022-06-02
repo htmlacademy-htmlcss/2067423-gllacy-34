@@ -202,3 +202,41 @@ label {
   font-size: 12px;
   line-height: 16px;
 }
+
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.filters {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button-filter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color:#2D3440;
+}
+
+.product-card a {
+  text-decoration: none;
+
+}
+
+.item-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.pagination-item a {
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
