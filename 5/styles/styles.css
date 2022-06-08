@@ -1,0 +1,446 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color:#2D3440;
+  background-color: #FEAFC3;
+}
+
+.page-header {
+  color:#2D3440;
+}
+
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.page-header-logo {
+  width: 137px;
+  margin-right: 16px;
+}
+
+
+.navigation-list {
+  width: 663px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 481px;
+  margin-left: auto;
+}
+
+.navigation-link {
+  color:#2D3440;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.card-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.button-white {
+  background-color: #FCFCFC;
+  color:#2D3440;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #FF2F64;
+  color: #FCFCFC;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.social-media-link {
+  background-color: #FCFCFC;
+  color: #FEAFC3;
+}
+
+.card-list {
+  display: flex;
+}
+
+.inner-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+
+.promo-gifts {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.gifts {
+  width: 570px;
+  background-color: #FF7799;
+  border-radius: 16px;
+}
+
+.promo-gifts {
+  width: 199px;
+  margin-left: 36px;
+}
+
+.description-of-raffle {
+  width: 328px;
+  margin-left: 36px;
+}
+
+.raspeberry::after {
+  content: url(../image/index/raspberry.png);
+  margin-left: 351px;
+}
+
+.marshmallow::after {
+  content: url(../image/index/marshmallow.png);
+  margin-left: 351px;
+}
+
+.popular-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  width: 270px;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+
+.product-card-image {
+  padding: 0 51px;
+}
+
+.wrapper-item {
+  width: 190px;
+  padding: 0 40px;
+}
+
+.name-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color:#2D3440;
+  text-align: center;
+  text-decoration: none;
+}
+
+.description-item {
+  color: #565C66;
+  text-align: center;
+}
+
+.description {
+  color: #565C66;
+}
+
+.wrapper-advantages {
+  background-image: url(../image/Сео.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.advantages {
+  background-color: #FCFCFC;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-item {
+  width: 505px;
+}
+
+.store-news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog {
+  width: 570px;
+  background: url(../image/index/blog.jpg);
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.title-blog {
+  line-height: 20px;
+  color: #565C66;
+}
+
+.title-post {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.subscribe {
+  width: 570px;
+  border-radius: 16px;
+  background-image: url(../image/index/subscribe.png);
+}
+
+
+.wrapper-subscribe {
+  width: 558px;
+  background-color: #FCFCFC;
+  margin: 6px;
+}
+
+.wrapper-subscribe p{
+  width: 506px;
+  margin: 0 26px;
+}
+
+.subcribe-form {
+  width: 506px;
+  margin: 0 26px;
+}
+
+.email {
+  width: 332px;
+}
+
+.button-post {
+  width: 152px;
+  border-radius: 16px;
+}
+
+.delivery {
+  background-image: url(../image/index/delivery.jpg);
+  background-repeat: no-repeat;
+}
+
+.title-delivery {
+  width: 356px;
+  margin-left: 100px;
+}
+
+.description-delivery {
+  width: 371px;
+  margin-left: 100px;
+}
+
+.delivery-form {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  width: 500px;
+  background-color: #FCFCFC;
+  margin-left: 606px;
+}
+
+.delivery-form p {
+  width: 380px;
+  margin: 0 80px 0 40px;
+}
+
+.delivery-date {
+  width: 117px;
+}
+
+.contacts {
+  background-image: url(../image/index/contacts.jpg);
+  border-radius: 16px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.wrapper-contacts {
+  width: 343px;
+  background-color: #FCFCFC;
+  margin: 0 64px;
+}
+
+.adress {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.shedule {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-phone {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+
+.page-footer-container {
+  width: 1170px;
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.footer-social {
+  width: 104px;
+  margin: 0 299px 0 4px;
+}
+
+.footer-documentation {
+  width: 356px;
+  margin-right: 200px;
+}
+
+.footer-documents a {
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.suppliers {
+  font-weight: 700;
+}
+
+.about {
+  width: 193px;
+}
+
+.by {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.filters {
+  width: 823px;
+
+}
+.select-control {
+  width: 196px;
+}
+
+.filter-calories {
+  width: 383px;
+}
+
+.filter-fillers {
+  width: 604px;
+}
+
+.button-filter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color:#2D3440;
+}
+
+.catalog {
+  width: 1170px;
+}
+
+.product-card a {
+  text-decoration: none;
+
+}
+
+.item-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.pagination-item a {
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
