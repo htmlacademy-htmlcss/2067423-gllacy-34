@@ -30,21 +30,21 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  font-family: "Inter", sans-serif;;
+  font-family: "Inter", sans-serif;
+  ;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color:#2D3440;
+  color: #2D3440;
   background-color: #FEAFC3;
 }
 
 .page-header {
-  color:#2D3440;
+  color: #2D3440;
 }
 
 .navigation {
   display: flex;
-  width: 1170px;
   margin: 0 auto;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .navigation-link {
-  color:#2D3440;
+  color: #2D3440;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
@@ -86,6 +86,7 @@ body {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  width: 470px;
 }
 
 .card-description {
@@ -101,7 +102,7 @@ body {
 
 .button-white {
   background-color: #FCFCFC;
-  color:#2D3440;
+  color: #2D3440;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -130,8 +131,14 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  text-align: center;
 }
+
+.title-gifts {
+  width: 434px;
+  padding-left: 368px;
+  ;
+}
+
 
 .index-columns {
   display: flex;
@@ -140,6 +147,12 @@ body {
   padding: 0;
 }
 
+.gifts {
+  width: 570px;
+  height: 268px;
+  background-color: #FF7799;
+  border-radius: 16px;
+}
 
 .promo-gifts {
   font-weight: 700;
@@ -147,30 +160,35 @@ body {
   line-height: 30px;
 }
 
-.gifts {
-  width: 570px;
-  background-color: #FF7799;
-  border-radius: 16px;
-}
-
-.promo-gifts {
+.promo-raspeberry {
   width: 199px;
-  margin-left: 36px;
+  padding-left: 36px;
 }
 
 .description-of-raffle {
-  width: 328px;
-  margin-left: 36px;
+  padding-left: 36px;
+  padding-right: 206px;
+  ;
+}
+
+.promo-marshmallow {
+  width: 254px;
 }
 
 .raspeberry::after {
   content: url(../image/index/raspberry.png);
-  margin-left: 351px;
+  padding-left: 351px;
 }
 
+/*непонятно как правильно сделать псевдоэлемент*/
 .marshmallow::after {
   content: url(../image/index/marshmallow.png);
-  margin-left: 351px;
+
+}
+
+.popular {
+  width: 527px;
+  margin-left: 322px;
 }
 
 .popular-items {
@@ -199,7 +217,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color:#2D3440;
+  color: #2D3440;
   text-align: center;
   text-decoration: none;
 }
@@ -214,13 +232,18 @@ body {
 }
 
 .wrapper-advantages {
-  background-image: url(../image/Сео.png);
-  background-size: 100%;
+  background-image: url(../image/index/Сео.png);
   background-repeat: no-repeat;
 }
 
 .advantages {
   background-color: #FCFCFC;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.title-advatages {
+  padding-left: 26px;
 }
 
 .advantages-list {
@@ -247,12 +270,15 @@ body {
 .title-blog {
   line-height: 20px;
   color: #565C66;
+  padding-left: 32px;
 }
 
 .title-post {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  width: 303px;
+  padding-left: 32px;
 }
 
 .subscribe {
@@ -263,18 +289,18 @@ body {
 
 
 .wrapper-subscribe {
-  width: 558px;
   background-color: #FCFCFC;
+  padding: 26px 0 26px;
   margin: 6px;
 }
 
-.wrapper-subscribe p{
+.description {
   width: 506px;
   margin: 0 26px;
 }
 
 .subcribe-form {
-  width: 506px;
+  padding: 26px 0 26px;
   margin: 0 26px;
 }
 
@@ -290,16 +316,19 @@ body {
 .delivery {
   background-image: url(../image/index/delivery.jpg);
   background-repeat: no-repeat;
+  padding-left: 100px;
 }
 
 .title-delivery {
   width: 356px;
-  margin-left: 100px;
+  margin: 0;
+
+
 }
 
 .description-delivery {
   width: 371px;
-  margin-left: 100px;
+  margin: 0;
 }
 
 .delivery-form {
@@ -308,7 +337,6 @@ body {
   line-height: 20px;
   width: 500px;
   background-color: #FCFCFC;
-  margin-left: 606px;
 }
 
 .delivery-form p {
@@ -324,14 +352,14 @@ body {
   background-image: url(../image/index/contacts.jpg);
   border-radius: 16px;
   margin: 0;
-  padding: 0;
+  padding-left: 64px;
 
 }
 
 .wrapper-contacts {
   width: 343px;
   background-color: #FCFCFC;
-  margin: 0 64px;
+  padding-left: 40px;
 }
 
 .adress {
@@ -357,7 +385,6 @@ body {
 
 
 .page-footer-container {
-  width: 1170px;
   display: flex;
   margin: 0 auto;
 }
@@ -404,6 +431,7 @@ body {
   width: 823px;
 
 }
+
 .select-control {
   width: 196px;
 }
@@ -420,11 +448,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  color:#2D3440;
-}
-
-.catalog {
-  width: 1170px;
+  color: #2D3440;
 }
 
 .product-card a {
@@ -443,4 +467,3 @@ body {
   text-decoration: none;
   color: #2D3440;
 }
-
