@@ -53,39 +53,23 @@
         <h1 class="visually-hidden">Glasy Shop</h1>
         <section class="carousel">
           <h2 class="visually-hidden">Карусель с тремя видами мороженого</h2>
-          <img class="slider-image" src="image/index/main_image.png" alt="клубничное мороженое">
-          <button class="slider-button slider-prev">
+          <div class="wrapper-description-carousel">
+            <h3 class="card-title">Нежный пломбир с клубничным джемом</h3>
+            <p class="card-description">Натуральное мороженое из свежих сливок
+              и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+            <a class="button-white order" href="#">Заказать</a>
+          </div>
+          <button class="slider-button visually-hidden">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
-          <button class="slider-button slider-next">
+          <img class="slider-image" src="image/index/main_image.png" alt="клубничное мороженое">
+          <button class="slider-button visually-hidden">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
-          <ul class="card-list">
-            <li class="card">
-              <h3 class="card-title">Нежный пломбир с клубничным джемом</h3>
-              <p class="card-description">Натуральное мороженое из свежих сливок
-                и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-              <a class="button-white order" href="#">Заказать</a>
-              <img class="ice-cream strawberry" src="image/index/strawberry.png" width="66" height="150"
-                alt="Мороженое с клубничным джемом">
-            </li>
-            <li class="card">
-              <h3 class="card-title">Сливочное мороженое со вкусом банана</h3>
-              <p class="card-description">Сливочное мороженое с ярким банановым вкусом подарит
-                вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-              <a class="button-white order" href="#">Заказать</a>
-              <img class="ice-cream banana" src="image/index/slide-banana.png" width="66" height="150"
-                alt="Мороженое со вкусом банана">
-            </li>
-            <li class="card">
-              <h3 class="card-title">Карамельный пломбир с маршмеллоу</h3>
-              <p class="card-description">Необычный сладкий десерт с карамельным топпингом и кусочками
-                зефира завоюет сердца сладкоежек всех возрастов.</p>
-              <a class="button-white order" href="#">Заказать</a>
-              <img class="ice-cream caramel" src="image/index/slide-caramel.png" width="66" height="150"
-                alt="Мороженое с маршмеллоу">
-            </li>
-          </ul>
+          <img class="ice-cream banana" src="image/index/slide-banana.png" width="66" height="150"
+           alt="Мороженое со вкусом банана">
+          <img class="ice-cream caramel" src="image/index/slide-caramel.png" width="66" height="150"
+           alt="Мороженое с маршмеллоу">
           <ul class="social-media">
             <li class="social-media-item">
               <a class="visually-hidden" href="https://t.me/htmlacademy">Telegram</a>
@@ -98,7 +82,7 @@
             </li>
           </ul>
         </section>
-        <section class="raffle-of-gifts">
+        <section class="inner-section">
           <h2 class="inner-title title-gifts">
             Заказывайте мороженое и получайте подарки!
           </h2>
@@ -127,11 +111,11 @@
             </article>
           </div>
         </section>
-        <section class="product line">
+        <section class="inner-section">
           <h2 class="visually-hidden">Популярные вкусы</h2>
           <p class="inner-title popular">Попробуйте самые популярные вкусы нашего мороженого</p>
-          <ul class="popular-items">
-            <li class="item">
+          <ul class="product-list">
+            <li class="product-card">
               <img class="product-card-image" src="image/index/product-1.jpg" width="160" height="160"
                 alt="Мороженое малинка">
               <div class="wrapper-item">
@@ -145,11 +129,11 @@
                 </a>
               </div>
             </li>
-            <li class="item">
+            <li class="product-card">
               <img class="product-card-image" src="image/index/product-2.jpg" width="160" height="160"
                 alt="Мороженое Фисташка">
               <div class="wrapper-item">
-                <p class="name-item">Фисташка</p>
+                <h3 class="name-item">Фисташка</h3>
                 <p class=" description-item">Фисташковый пломбир с кусочками шоколада</p>
                 <b class="item-price">340 ₽/кг</b>
                 <a class="product-card-button button" href="#">
@@ -159,11 +143,11 @@
                 </a>
               </div>
             </li>
-            <li class="item">
+            <li class="product-card">
               <img class="product-card-image" src="image/index/product-3.jpg" width="160" height="160"
                 alt="Мороженое Черника">
               <div class="wrapper-item">
-                <p class="name-item">Черника</p>
+                <h3 class="name-item">Черника</h3>
                 <p class=" description-item">Крем-брюле с черничным джемом</p>
                 <b class="item-price">330 ₽/кг</b>
                 <a class="product-card-button button" href="#">
@@ -173,11 +157,11 @@
                 </a>
               </div>
             </li>
-            <li class="item">
+            <li class="product-card">
               <img class="product-card-image" src="image/index/product-4.jpg" width="160" height="160"
                 alt="Мороженое Бабл-гам">
               <div class="wrapper-item">
-                <p class="name-item">Бабл-гам</p>
+                <h3 class="name-item">Бабл-гам</h3>
                 <p class=" description-item">Ванильный пломбир
                   со сладкой посыпкой</p>
                 <b class="item-price">320 ₽/кг</b>
@@ -210,8 +194,7 @@
               </li>
               <li class="advantages-item">
                 <img class="advantages-pic" src="image/index/cow.svg" width="48" height="48" alt="cow">
-                <p class=" description"> Закупка ингредиентов производится только у проверенных фермерских хозяйств, с
-                  которыми
+                <p class=" description"> Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми
                   нас связывает долговременное сотрудничество.
                 </p>
               </li>
@@ -238,7 +221,7 @@
               <form class="subcribe-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label for="user-email"></label>
                 <input class="email" type="email" name="e-mail" id="user-email" placeholder="email@examplecom">
-                <button class="button button-post" type="submit">Отправить</button>
+                <button class="button" type="submit">Отправить</button>
               </form>
             </div>
           </section>
@@ -251,24 +234,34 @@
               Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
             </p>
           </div>
-          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="wrapper-inner">
-              <p class="description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-              <p class="delivery-form-date">
-                <label for="delivery-date">Дата</label>
+          <div class="wrapper-form">
+            <p class="description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+            <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group appointment-form-date">
+                <label for="form-label">
+                  Дата
+                  <button class="info">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                  </button>
+                </label>
                 <input type="text" id="delivery-date" placeholder="01.04.2020">
               </p>
-              <p class="delivery-form-phone">
-                <label for="delivery-phone">Телефон</label>
+              <p class="field-group appointment-form-phone">
+                <label for="form-label">Телефон</label>
                 <input type="text" id="delivery-phone" placeholder="+7 800 999-00-00">
               </p>
-              <p class="delivery-form-adress">
-                <label for="delivery-adress">Адрес</label>
+              <p class="field-group appointment-form-adress">
+                <label for="form-label">
+                  Адрес
+                  <button class="info">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                  </button>
+                </label>
                 <input type="text" id="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
               </p>
-              <button class="button button-post" type="submit">Отправить</button>
-            </div>
-          </form>
+              <button class="button appointment-submit" type="submit">Отправить</button>
+            </form>
+          </div>
         </section>
         <section class="contacts">
           <div class="wrapper-contacts">
