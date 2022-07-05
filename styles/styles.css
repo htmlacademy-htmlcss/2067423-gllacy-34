@@ -108,7 +108,7 @@ body {
   line-height: 20px;
 }
 
-.navigation-user .navigation-item:not(:first-child) {
+.navigation-user .navigation-item:not(:first-child) .navigation-link {
   background-color:rgba(252, 252, 252, 0.5);
   border-radius: 26px;
   padding: 6px 16px 6px 0;
@@ -145,7 +145,19 @@ body {
   background: rgba(252, 252, 252, 0.5);
   box-shadow: 0 0 0 2px #2D3440;
   border-radius: 30px;
+  outline: none;
 }
+
+.navigation-link:active {
+  background: #FCFCFC;
+  border-radius: 30px;
+}
+
+.navigation-link:current {
+  background: #FF4A78;
+  border-radius: 30px;
+}
+
 
 
                 /*Main*/
@@ -213,6 +225,28 @@ body {
   border: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   color: #2D3440;
+}
+
+.button-white:hover {
+  background: rgba(252, 252, 252, 0.4);
+  border: 4px solid #FCFCFC;
+  box-shadow: 0px 4px 15px rgba(133, 133, 133, 0.15);
+  border-radius: 26px;
+}
+
+.button-white:focus {
+  background: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  outline: none;
+}
+
+.button-white:active {
+  background: #FCFCFC;
+  border: 2px solid #2D3440;
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
 }
 
 .product-card-button {
