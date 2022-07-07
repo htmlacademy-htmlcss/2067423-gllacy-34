@@ -108,13 +108,16 @@ body {
   line-height: 20px;
 }
 
-.navigation-user .navigation-item:not(:first-child) .navigation-link {
+.navigation-user .navigation-item:nth-child(3) .navigation-link,
+.navigation-user .navigation-item:nth-child(4) .navigation-link{
   background-color:rgba(252, 252, 252, 0.5);
   border-radius: 26px;
   padding: 6px 16px 6px 0;
 }
 
-
+.navigation-user .navigation-item:nth-child(2) .navigation-link {
+  background-color:rgba(252, 252, 252, 0.5);
+}
 
 .navigation-icon {
   position: absolute;
@@ -122,12 +125,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-
   fill: #2D3440;
-}
-
-.navigation-user .navigation-link-login {
-  padding-left: 38px;
 }
 
 .navigation-link-login .navigation-icon {
@@ -136,26 +134,37 @@ body {
   margin: auto 0;
 }
 
+.navigation-link-phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
  .navigation-link:hover  {
   background: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
 }
 
 .navigation-link:focus {
-  background: rgba(252, 252, 252, 0.5);
   box-shadow: 0 0 0 2px #2D3440;
-  border-radius: 30px;
-  outline: none;
+  
 }
 
 .navigation-link:active {
+  box-shadow: 0 0 0 2px #FCFCFC;
   background: #FCFCFC;
-  border-radius: 30px;
 }
 
-.navigation-link:current {
+.navigation-link-current {
   background: #FF4A78;
   border-radius: 30px;
+  color: #FCFCFC;
+}
+
+.content {
+  padding-left: 38px;
 }
 
 
@@ -205,6 +214,14 @@ body {
   margin: 0;
 }
 
+.arrow {
+  padding: 0;
+  margin: 0;
+  fill: #FCFCFC;
+  border: 2px solid #FCFCFC;
+  border-radius: 26px;
+}
+
 .button {
   display: inline-block;
   background-color: #FF2F64;
@@ -250,17 +267,20 @@ body {
 }
 
 .product-card-button {
-  position: relative;
+  box-sizing: border-box;
+  background-color: #FF2F64;
   border-radius: 50%;
-  padding: 16px;
-  border: 0;
-  background-image: url(../image/catalog/cart.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.product-card-button .navigation-icon {
+.cart {
+  width: 16px;
+  height: 16px;
   fill: #FCFCFC;
+  padding: 8px;
+}
+
+.cart:hover {
+
 }
 
 .inner-title {
@@ -606,18 +626,6 @@ body {
   background-size: 24px 24px;
 }
 
-.social-tg {
-  background-image: url(../image/telegram.svg);
-}
-
-.social-vk {
-  background-image: url(../image/vk.svg);
-}
-
-.social-Youtube {
-  background-image: url(../image/youtube.svg);
-}
-
 .social-media-item {
   width: 24px;
   height: 24px;
@@ -626,6 +634,10 @@ body {
 
 .social-media-item:nth-child(3n) {
   margin-right: 0;
+}
+
+.social-icon {
+  fill: #FCFCFC;
 }
 
 .footer-documentation {

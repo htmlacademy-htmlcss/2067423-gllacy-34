@@ -26,7 +26,7 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a class="navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
@@ -34,14 +34,14 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-login" href="#">
+              <a class="navigation-link navigation-link-login link-login-current" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="14" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.525c0-.369.298-.667.667-.667h2.666a2
                   2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H8.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0
                   12 12.19V2.858a.666.666 0 0 0-.667-.667H8.667A.667.667 0 0 1 8 1.525ZM4.862 3.72c.26-.26.682-.26.943
                   0l3.329 3.329a.673.673 0 0 1 .2.476.664.664 0 0 1-.2.476l-3.33 3.328a.667.667 0 1
                   1-.942-.943l2.195-2.195H.667a.667.667 0 1 1 0-1.333h6.39L4.862 4.663a.667.667 0 0 1 0-.943Z" /></svg>
-                Вход
+                <span class="content">Вход</span>
               </a>
             </li>
             <li class="navigation-item">
@@ -55,7 +55,7 @@
                 <span class="visually-hidden">
                   Корзина
                 </span>
-                2 товара
+                <span class="content">2 товара</span>
               </a>
             </li>
           </ul>
@@ -73,11 +73,11 @@
             <a class="button  button-white" href="#">Заказать</a>
           </div>
           <button class="slider-button">
-            <img class="arrow" src="../image/index/arrow-left.png" alt="Предыдущий слайд">
+            <svg class="arrow" aria-hidden="true" focusable="false" width="38" height="38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M38 19c0 10.493-8.507 19-19 19S0 29.493 0 19 8.507 0 19 0s19 8.507 19 19Z" fill="#FCFCFC" fill-opacity=".3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M19.865 24.135a.665.665 0 0 0 .94-.94l-4.201-4.201 4.201-4.202a.665.665 0 0 0-.94-.94l-4.669 4.668-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z" fill="#FCFCFC"/><path d="M19 2c9.389 0 17 7.611 17 17h4C40 7.402 30.598-2 19-2v4ZM2 19C2 9.611 9.611 2 19 2v-4C7.402-2-2 7.402-2 19h4Zm17 17C9.611 36 2 28.389 2 19h-4c0 11.598 9.402 21 21 21v-4Zm0 4c11.598 0 21-9.402 21-21h-4c0 9.389-7.611 17-17 17v4Z" /></svg>
           </button>
           <img class="slider-image" src="image/index/main_image.png" alt="клубничное мороженое">
           <button class="slider-button">
-            <img class="arrow" src="../image/index/arrow-right.png" alt="Следующий слайд">
+            <svg class="arrow" aria-hidden="true" focusable="false" width="38" height="38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 19C0 8.507 8.507 0 19 0s19 8.507 19 19-8.507 19-19 19S0 29.493 0 19Z" fill="#FCFCFC" fill-opacity=".3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.135 13.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.668.003-.003c.26-.26.26-.681 0-.94l-4.672-4.672Z" fill="#FCFCFC"/><path d="M19 36C9.61 36 2 28.389 2 19h-4c0 11.598 9.402 21 21 21v-4Zm17-17c0 9.389-7.611 17-17 17v4c11.598 0 21-9.402 21-21h-4ZM19 2c9.389 0 17 7.611 17 17h4C40 7.402 30.598-2 19-2v4Zm0-4C7.402-2-2 7.402-2 19h4C2 9.611 9.61 2 19 2v-4Z" /></svg>
           </button>
           <img class="ice-cream banana" src="image/index/slide-banana.png" width="66" height="150"
            alt="Мороженое со вкусом банана">
@@ -85,7 +85,8 @@
            alt="Мороженое с маршмеллоу">
           <ul class="social-media">
             <li class="social-media-item">
-              <a class="social-link social-tg" href="https://t.me/htmlacademy">
+              <a class="social-link" href="https://t.me/htmlacademy">
+                <svg class="social-icon" aria-hidden="true" focusable="false" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12ZM12.43 8.859c-1.167.485-3.5 1.49-6.998 3.014-.568.226-.866.447-.893.663-.046.366.412.51 1.034.705.085.027.173.054.263.084.613.199 1.437.432 1.865.441.389.008.823-.152 1.302-.48 3.268-2.207 4.955-3.322 5.061-3.346.075-.017.179-.039.249.024.07.062.063.18.056.212-.046.193-1.84 1.862-2.77 2.726-.29.269-.495.46-.537.504-.094.097-.19.19-.282.279-.57.548-.996.96.024 1.632.49.323.882.59 1.273.856.427.291.853.581 1.405.943.14.092.274.187.405.28.497.355.944.673 1.496.623.32-.03.652-.331.82-1.23.397-2.126 1.179-6.73 1.36-8.628a2.112 2.112 0 0 0-.02-.472.506.506 0 0 0-.172-.325c-.143-.117-.365-.142-.465-.14-.451.008-1.143.249-4.476 1.635Z" /></svg>
                 <span class="visually-hidden">
                   Telegram
                 </span>
@@ -93,6 +94,7 @@
             </li>
             <li class="social-media-item">
               <a class="social-link social-vk" href="https://vk.com/htmlacademy">
+                <svg class="social-icon" aria-hidden="true" focusable="false" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12Zm-11.412 2.975h-.717s-1.582.083-2.976-1.188c-1.52-1.388-2.863-4.14-2.863-4.14s-.077-.18.007-.268c.095-.098.352-.104.352-.104l1.715-.01s.161.024.277.098c.095.062.149.176.149.176s.277.615.644 1.17c.716 1.085 1.05 1.322 1.293 1.206.354-.17.248-1.533.248-1.533s.007-.496-.178-.716c-.143-.17-.414-.22-.533-.235-.096-.011.062-.207.267-.295.309-.133.854-.14 1.498-.135.501.005.645.032.842.074.455.096.44.405.41 1.07-.01.2-.02.43-.02.697 0 .06-.002.124-.004.19-.01.34-.023.73.233.876.132.074.453.011 1.256-1.185.381-.566.667-1.233.667-1.233s.062-.119.16-.17c.098-.051.232-.036.232-.036l1.805-.01s.542-.056.63.158c.091.226-.203.751-.94 1.612-.696.813-1.036 1.115-1.01 1.38.02.196.242.372.67.72.888.722 1.124 1.101 1.18 1.192a.447.447 0 0 0 .011.016c.398.578-.44.623-.44.623l-1.603.02s-.345.06-.798-.214c-.237-.142-.469-.375-.69-.597-.337-.339-.649-.652-.915-.578-.447.124-.433.967-.433.967s.004.18-.098.277c-.11.104-.328.125-.328.125Z" /></svg>
                 <span class="visually-hidden">
                   Vkontakte
                 </span>
@@ -100,6 +102,7 @@
             </li>
             <li class="social-media-item">
               <a class="social-link social-Youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social-icon" aria-hidden="true" focusable="false" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m14.004 11.791-2.808-1.31c-.245-.114-.446.014-.446.285v2.468c0 .271.201.399.446.285l2.806-1.31c.247-.115.247-.303.002-.418ZM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0Zm0 16.875c-6.143 0-6.25-.554-6.25-4.875S5.857 7.125 12 7.125c6.142 0 6.25.554 6.25 4.875s-.108 4.875-6.25 4.875Z" /></svg>
                 <span class="visually-hidden">
                   Youtube
                 </span>
@@ -148,7 +151,8 @@
                 <p class=" description-item">Сливочное мороженое с малиновым джемом</p>
               <div class="product-card-price-container">
                   <b class="item-price">310 ₽/кг</b>
-                  <a class="product-card-button button" href="#">
+                  <a class="product-card-button" href="#">
+                    <svg class="cart" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" /></svg>
                     <span class="visually-hidden">
                       Корзина
                     </span>
@@ -164,7 +168,8 @@
                 <p class=" description-item">Фисташковый пломбир с кусочками шоколада</p>
                 <div class="product-card-price-container">
                   <b class="item-price">340 ₽/кг</b>
-                  <a class="product-card-button button" href="#">
+                  <a class="product-card-button" href="#">
+                    <svg class="cart" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" /></svg>
                     <span class="visually-hidden">
                       Корзина
                     </span>
@@ -180,7 +185,8 @@
                 <p class=" description-item">Крем-брюле с черничным джемом</p>
                 <div class="product-card-price-container">
                   <b class="item-price">330 ₽/кг</b>
-                  <a class="product-card-button button" href="#">
+                  <a class="product-card-button" href="#">
+                    <svg class="cart" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" /></svg>
                     <span class="visually-hidden">
                       Корзина
                     </span>
@@ -197,7 +203,8 @@
                   со сладкой посыпкой</p>
                   <div class="product-card-price-container">
                     <b class="item-price">320 ₽/кг</b>
-                    <a class="product-card-button button" href="#">
+                    <a class="product-card-button" href="#">
+                      <svg class="cart" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" /></svg>
                       <span class="visually-hidden">
                         Корзина
                       </span>
@@ -271,7 +278,7 @@
             <p class="description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group appointment-form-date">
-                <label for="form-label">
+                <label>
                   Дата
                   <button class="info">
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
@@ -280,11 +287,11 @@
                 <input type="text" id="delivery-date" placeholder="01.04.2020">
               </p>
               <p class="field-group appointment-form-phone">
-                <label for="form-label">Телефон</label>
+                <label >Телефон</label>
                 <input type="text" id="delivery-phone" placeholder="+7 800 999-00-00">
               </p>
               <p class="field-group appointment-form-adress">
-                <label for="form-label">
+                <label>
                   Адрес
                   <button class="info">
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
