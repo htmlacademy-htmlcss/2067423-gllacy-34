@@ -1020,13 +1020,96 @@ body {
   margin-bottom: 44px;
 }
 
-.select-control {
-  width: 196px;
-}
-.catalog-filter {
-  display: flex;
-  flex-wrap: wrap;
+.catalog-filter-group {
   margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.control {
+  position: relative;
+  display: flex;
+  padding-left: 24px;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.catalog-filter-item:last-child .control {
+  padding-right: 0;
+}
+
+
+.select-control {
+  width: 100%;
+  border: none;
+  background: rgba(252, 252, 252, 0.3);
+  padding: 8px 16px;
+  padding-right: 13px;
+  border-radius: 20px;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  background-image: url(../image/catalog/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  appearance: none;
+  outline: none;
+}
+
+.wrapper-first-row-filter .control {
+  padding: 0;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  padding-left: 8px;
+  background-image: url(../image/catalog/default_checkbox.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.control-mark:hover {
+  background-image: url(../image/catalog/hover_checkbox.svg);
+
+}
+
+.control-input[type="checkbox"]:checked + .control-mark:hover {
+  background-image: url(../image/catalog/hover_checked.svg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url(../image/catalog/checked.svg);
+
+}
+
+.control-mark:disabled {
+  background-image: url(../image/catalog/disabled_checkbox.svg);
+
+}
+
+.control-input[type="checkbox"]:checked + .control-mark:disabled {
+  background-image: url(../image/catalog/disabled_checked.svg);
+}
+
+.control-label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.wrapper-first-row-filter {
+  display: grid;
+  grid-template-columns: 196px 196px 1fr;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.wrapper-second-row-filter {
+  display: grid;
+  grid-template-columns: 1fr 185px;
+  gap: 16px;
 }
 
 .filter-calories {
@@ -1038,6 +1121,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  background: rgba(252, 252, 252, 0.3);
+  padding: 8px 24px;
+  border-radius: 20px;
 }
 
 .filter-fillers {
@@ -1143,12 +1229,13 @@ body {
 }
 
 
-.circle {
+.circle {x
   position: absolute;
   background-color: #FFFFFF;
 }
 
 .button-filter {
+  width: 185px;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -1156,6 +1243,9 @@ body {
   background: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
   border-radius: 20px;
+  margin-top: 38px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .button-filter:hover {
