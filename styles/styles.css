@@ -1067,7 +1067,7 @@ body {
   border-radius: 100%;
 }
 
-.range-toggle:hover:after {
+.range-toggle:hover::after {
   background: #FFFFFF;
 }
 
