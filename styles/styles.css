@@ -1026,6 +1026,10 @@ body {
   padding: 0;
 }
 
+.wrapper-sorting {
+  padding-left: 16px;
+}
+
 .control {
   position: relative;
   display: flex;
@@ -1056,10 +1060,48 @@ body {
   outline: none;
 }
 
+.control-radio {
+  width: 16px;
+  height: 16px;
+  padding-right: 8px;
+  background-image: url(../image/catalog/default_radio.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.control-radio:hover {
+  background-image: url(../image/catalog/hover_radio.svg);
+}
+
+.control-radio:disabled {
+  background-image: url(../image/catalog/disabled_radio.svg);
+}
+
+.control-input[type="radio"]:checked + .control-radio {
+  background-image: url(../image/catalog/radio_default_checked.svg);
+}
+
+.control-input[type="radio"]:checked + .control-radio:hover {
+  background-image: url(../image/catalog/radio_hover_checkedsvg.svg)
+}
+
+.control-input[type="radio"]:checked + .control-radio:disabled {
+  background-image: url(../image/catalog/radio_disabled_checked.svg);
+}
+
+.content-filter-calories {
+  padding-right: 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-filter-item:last-child .content-filter-calories{
+  padding-right: 0;
+}
+
 .wrapper-first-row-filter .control {
   padding: 0;
 }
-
 .control-mark {
   position: absolute;
   left: 0;
@@ -1098,6 +1140,8 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
+
+
 
 .wrapper-first-row-filter {
   display: grid;

@@ -77,8 +77,8 @@
           <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <div class="wrapper-first-row-filter">
-              <label class="control">
-                Сортировка:
+              <label class="label-sorting">
+               <span class="wrapper-name">Сортировка:</span>
                <select class="select-control">
                 <option value="popular">по популярности</option>
                 <option value="cheap">сначала дешевле</option>
@@ -108,30 +108,34 @@
                 </div>
               </fieldset>
               <fieldset class="catalog-filter-group filter-calories">
-                <legend class="catalog-filter-title">Жирность:</legend>
+                <legend class="catalog-filter-title wrapper-name">Жирность:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group">
-                      0%
+                      <input class="visually-hidden control-input" type="radio" name="product-group">
+                      <span class="control-radio"></span>
+                      <span class="content-filter-calories">0%</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" checked>
-                      до 10%
+                      <input class="visually-hidden control-input" type="radio" name="product-group" checked>
+                      <span class="control-radio"></span>
+                      <span class="content-filter-calories">до 10%</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group">
-                      до 30%
+                      <input class="visually-hidden control-input" type="radio" name="product-group">
+                      <span class="control-radio"></span>
+                      <span class="content-filter-calories">до 30%</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group">
-                      выше 30%
+                      <input class="visually-hidden control-input" type="radio" name="product-group">
+                      <span class="control-radio"></span>
+                      <span class="content-filter-calories">выше 30%</span>
                     </label>
                   </li>
                 </ul>
