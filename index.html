@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico/favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="image/favicon-32x32.png">
   </head>
 
   <body>
@@ -38,8 +39,8 @@
             <li class="navigation-item">
               <a class="navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link link-search" href="#">
+            <li class="navigation-item navigation-user-item">
+              <a class="navigation-link user-lin link-search" href="#">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" /></svg>
               </a>
               <div class="popover-search">
@@ -50,7 +51,7 @@
                 </form>
               </div>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-user-item">
               <a class="navigation-link navigation-link-login link-login-current" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="14" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.525c0-.369.298-.667.667-.667h2.666a2
@@ -83,7 +84,7 @@
                 </div>
               </div>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-user-item">
               <a class="navigation-link navigation-link-login navigation-cart" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0
@@ -102,7 +103,7 @@
                   <ul class="cart-items-list">
                     <li class="cart-item">
                       <div class="wrapper-item-cart">
-                        <img class="image-cart-item" src="image/pop_over/cart-strawberry.png" width="46" height="46">
+                        <img class="image-cart-item" src="image/pop-over/cart-strawberry.png" width="46" height="46" alt="мороженое малинка">
                         <p class="cart-item-title">
                           <span class="title-item">Малинка</span>
                           <span class="description-item-cart">1 кг х 310 ₽</span>
@@ -120,7 +121,7 @@
                     </li>
                     <li class="cart-item">
                       <div class="wrapper-item-cart">
-                        <img class="image-cart-item" src="image/pop_over/cart-buble-gum.png" width="46" height="46">
+                        <img class="image-cart-item" src="image/pop-over/cart-buble-gum.png" width="46" height="46" alt="мороженое бабл-гам">
                         <p class="cart-item-title">
                           <span class="title-item">Бабл-гам</span>
                           <span class="description-item-cart">1,5 кг х 320 ₽</span>
@@ -157,7 +158,7 @@
             <h3 class="card-title">Нежный пломбир <br>с клубничным джемом</h3>
             <p class="card-description description-slider">Натуральное мороженое из свежих сливок<br>
               и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-            <button class="button  button-white">Заказать</button>
+            <button class="button  button-white" type="button">Заказать</button>
           </div>
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
@@ -182,7 +183,7 @@
             </li>
           </ol>
           <div class="wrapper-slider">
-            <img class="slider-image" src="image/index/main_image.png" alt="клубничное мороженое" wiвth="306">
+            <img class="slider-image" src="image/index/main-image.png" alt="клубничное мороженое" width="306">
             <div class="wrapper-slider-button">
               <button class="slider-button slider-prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -264,7 +265,7 @@
                 <p class=" description-item">Сливочное мороженое с малиновым джемом</p>
               <div class="product-card-price-container">
                   <b class="item-price">310 ₽/кг</b>
-                  <button class="product-card-button">
+                  <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                       Корзина
                     </span>
@@ -280,7 +281,7 @@
                 <p class=" description-item">Фисташковый пломбир с кусочками шоколада</p>
                 <div class="product-card-price-container">
                   <b class="item-price">340 ₽/кг</b>
-                  <button class="product-card-button">
+                  <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                       Корзина
                     </span>
@@ -296,7 +297,7 @@
                 <p class=" description-item">Крем-брюле с черничным джемом</p>
                 <div class="product-card-price-container">
                   <b class="item-price">330 ₽/кг</b>
-                  <button class="product-card-button">
+                  <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                       Корзина
                     </span>
@@ -313,7 +314,7 @@
                   со сладкой посыпкой</p>
                   <div class="product-card-price-container">
                     <b class="item-price">320 ₽/кг</b>
-                    <button class="product-card-button">
+                    <button class="product-card-button" type="button">
                       <span class="visually-hidden">
                         Корзина
                       </span>
@@ -425,7 +426,7 @@
             <p class="contact-phone-text">Для заказов по телефону:</p>
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <p class="shedule">(с 10 до 20 ежедневно)</p>
-            <button class="button button-pink button-feedback">Форма обратной связи</button>
+            <button class="button button-pink button-feedback" type="submit">Форма обратной связи</button>
           </div>
         </section>
       </main>
@@ -479,7 +480,7 @@
           </ul>
         </section>
         <section class="about">
-          <img class="logo-htmlacademy" alt="ЛОГО" src="image/logo_htmlacademy.svg" width="93" height="27">
+          <img class="logo-htmlacademy" alt="ЛОГО" src="image/logo-htmlacademy.svg" width="93" height="27">
           <p class="by">Сделано в .html academy © 2021</p>
         </section>
     </footer>
@@ -488,7 +489,7 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -507,7 +508,7 @@
                 <textarea class="auth-form-field field field-textarea" id="auth-text">В свободной форме</textarea>
               </p>
             </div>
-            <button class="button button-modal">Отправить</button>
+            <button class="button button-modal" type="submit">Отправить</button>
           </form>
         </section>
       </div>

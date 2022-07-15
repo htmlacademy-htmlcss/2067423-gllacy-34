@@ -98,6 +98,11 @@ body {
   list-style-type: none;
 }
 
+.navigation-user .navigation-item:first-child {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .navigation-user .navigation-link {
   padding: 0;
   font-size: 14px;
@@ -108,8 +113,8 @@ body {
   position: relative;
 }
 
-.navigation-user .navigation-item:nth-child(3) .navigation-link,
-.navigation-user .navigation-item:nth-child(4) .navigation-link{
+.navigation-user-item:nth-child(3) .navigation-link,
+.navigation-user-item:nth-child(4) .navigation-link{
   background-color:rgba(252, 252, 252, 0.3);
   border-radius: 26px;
   padding: 6px 16px 6px 0;
@@ -128,7 +133,7 @@ body {
   position: relative;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
+.navigation-user-item:nth-child(2) .navigation-link {
   background-color:rgba(252, 252, 252, 0.3);
 }
 
@@ -173,17 +178,16 @@ body {
   background-color: #FCFCFC;
   border-radius: 30px;
 }
-
-.navigation-user .navigation-item:nth-child(2) .navigation-link:hover,
-.navigation-user .navigation-item:nth-child(3) .navigation-link:hover ,
-.navigation-user .navigation-item:nth-child(4) .navigation-link:hover  {
+.navigation-user-item:nth-child(2) .navigation-link:hover,
+.navigation-user-item:nth-child(3) .navigation-link:hover ,
+.navigation-user-item:nth-child(4) .navigation-link:hover  {
   background: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link:active,
-.navigation-user .navigation-item:nth-child(3) .navigation-link:active,
-.navigation-user .navigation-item:nth-child(4) .navigation-link:active {
+.navigation-user-item:nth-child(2) .navigation-link:active,
+.navigation-user-item:nth-child(3) .navigation-link:active ,
+.navigation-user-item:nth-child(4) .navigation-link:active {
   box-shadow: 0 0 0 2px #FCFCFC;
   background: #FCFCFC;
 }
@@ -320,7 +324,7 @@ body {
   cursor: pointer;
   border: 2px solid #FCFCFC;
   border-radius: 26px;
-  background-image: url(../image/index/Arrow-left.svg);
+  background-image: url(../image/index/arrow-left.svg);
   background-repeat: no-repeat;
   background-position: center;
   outline: none;
@@ -328,7 +332,7 @@ body {
 
 .slider-button:hover {
   background: #FCFCFC;
-  background-image: url(../image/index/Arrow-black.svg);
+  background-image: url(../image/index/arrow-black.svg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 26px;
@@ -336,7 +340,7 @@ body {
 
 .slider-button:focus {
   background: rgba(252, 252, 252, 0.3);
-  background-image: url(../image/index/Arrow-black.svg);
+  background-image: url(../image/index/arrow-black.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #2D3440;
@@ -346,7 +350,7 @@ body {
 .slider-button:active {
   background: rgba(252, 252, 252, 0.5);
   border-radius: 26px;
-  background-image: url(../image/index/Arrow-black.svg);
+  background-image: url(../image/index/arrow-black.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -357,7 +361,7 @@ body {
   opacity: 0.4;
   border: 2px solid #FCFCFC;
   border-radius: 26px;
-  background-image: url(../image/index/Arrow-left.svg);
+  background-image: url(../image/index/arrow-left.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -425,7 +429,6 @@ body {
   background: rgba(252, 252, 252, 0.5);
   border: 2px solid #2D3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  outline: 2px solid transparent;
 }
 
 .button-white:active {
@@ -624,7 +627,7 @@ body {
 }
 
 .wrapper-advantages {
-  background-image: url(../image/index/Сео.png);
+  background-image: url(../image/index/cео.png);
   background-repeat: no-repeat;
   padding: 24px;
   background-size: auto 480px;
@@ -838,7 +841,7 @@ body {
 .field {
   margin: 0;
   padding: 14px 16px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -889,6 +892,9 @@ body {
 }
 
 .wrapper-contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 343px;
   background-color: #FCFCFC;
   box-sizing: border-box;
@@ -1141,29 +1147,29 @@ body {
   width: 16px;
   height: 16px;
   padding-right: 8px;
-  background-image: url(../image/catalog/default_radio.svg);
+  background-image: url(../image/catalog/default-radio.svg);
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .control-radio:hover {
-  background-image: url(../image/catalog/hover_radio.svg);
+  background-image: url(../image/catalog/hover-radio.svg);
 }
 
 .control-radio:disabled {
-  background-image: url(../image/catalog/disabled_radio.svg);
+  background-image: url(../image/catalog/disabled-radio.svg);
 }
 
 .control-input[type="radio"]:checked + .control-radio {
-  background-image: url(../image/catalog/radio_default_checked.svg);
+  background-image: url(../image/catalog/radio-default-checked.svg);
 }
 
 .control-input[type="radio"]:checked + .control-radio:hover {
-  background-image: url(../image/catalog/radio_hover_checkedsvg.svg)
+  background-image: url(../image/catalog/radio-hover-checkedsvg.svg)
 }
 
 .control-input[type="radio"]:checked + .control-radio:disabled {
-  background-image: url(../image/catalog/radio_disabled_checked.svg);
+  background-image: url(../image/catalog/radio-disabled-checked.svg);
 }
 
 .content-filter-calories {
@@ -1185,18 +1191,18 @@ body {
   width: 16px;
   height: 16px;
   padding-left: 8px;
-  background-image: url(../image/catalog/default_checkbox.svg);
+  background-image: url(../image/catalog/default-checkbox.svg);
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .control-mark:hover {
-  background-image: url(../image/catalog/hover_checkbox.svg);
+  background-image: url(../image/catalog/hover-checkbox.svg);
 
 }
 
 .control-input[type="checkbox"]:checked + .control-mark:hover {
-  background-image: url(../image/catalog/hover_checked.svg);
+  background-image: url(../image/catalog/hover-checked.svg);
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
@@ -1205,12 +1211,12 @@ body {
 }
 
 .control-mark:disabled {
-  background-image: url(../image/catalog/disabled_checkbox.svg);
+  background-image: url(../image/catalog/disabled-checkbox.svg);
 
 }
 
 .control-input[type="checkbox"]:checked + .control-mark:disabled {
-  background-image: url(../image/catalog/disabled_checked.svg);
+  background-image: url(../image/catalog/disabled-checked.svg);
 }
 
 .control-label {
@@ -1483,7 +1489,7 @@ body {
   width: 441px;
   box-sizing: border-box;
   padding: 48px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   background: #FCFCFC;
   border-radius: 4px;
   filter: drop-shadow(0 15px 40px rgba(45, 52, 64, 0.12));
@@ -1744,7 +1750,7 @@ body {
   height: 10px;
   background-color: #ffffff;
   border: none;
-  background-image: url("../image/pop_over/close.svg");
+  background-image: url("../image/pop-over/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
