@@ -71,6 +71,7 @@ body {
   margin: 10px 0;
   padding: 0;
   list-style-type: none;
+  padding-left: 16px;
 }
 
 .navigation-link {
@@ -424,7 +425,7 @@ body {
   background: rgba(252, 252, 252, 0.5);
   border: 2px solid #2D3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  outline: none;
+  outline: 2px solid transparent;
 }
 
 .button-white:active {
@@ -532,11 +533,12 @@ body {
 .inner-section {
   display: grid;
   gap: 55px;
+  margin-top: -5px;
 }
 
 .title-gifts {
   width: 434px;
-  ;
+
 }
 
 .index-columns {
@@ -765,6 +767,7 @@ body {
 
 .wrapper-form .description {
   width: 380px;
+  margin: 0;
   margin-bottom: 32px;
   font-weight: 400;
   line-height: 22px;
@@ -935,6 +938,7 @@ body {
   position: relative;
   display: flex;
   padding: 44px 0;
+  border-top: 1px solid rgba(252, 252, 252, 0.3);;
 }
 
 
@@ -952,17 +956,26 @@ body {
   list-style-type: none;
 }
 
+.social-media-item {
+  position: relative;
+  width: 26px;
+  height: 27px;
+  margin-right: 16px;
+}
+
 .social-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   display: block;
   height: 24px;
   background-size: 24px 24px;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 100%;
   outline: none;
-}
-
-.social-media-item {
-  width: 24px;
-  height: 24px;
-  margin-right: 16px;
+  box-sizing: border-box;
 }
 
 .social-media-item:nth-child(3n) {
@@ -978,10 +991,11 @@ body {
   border-radius: 24px;
 }
 
+
 .social-link:focus {
   background: #2D3440;
-  border: 2px solid #2D3440;
-  border-radius: 24px;
+
+
 }
 
 .social-link:active {
@@ -999,6 +1013,10 @@ body {
   position: absolute;
   left: 407px;
   top: 50px;
+}
+
+.about-suppliers {
+  font-weight: 700;
 }
 
 .footer-list-documents {
@@ -1065,6 +1083,13 @@ body {
   margin: 0;
   padding-top: 16px;
 
+}
+
+.catalog-filter-title,
+.catalog-filter-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px
 }
 
 .filters {
@@ -1204,7 +1229,7 @@ body {
 
 .wrapper-second-row-filter {
   display: grid;
-  grid-template-columns: 1fr 185px;
+  grid-template-columns: 604px 185px;
   gap: 16px;
 }
 
@@ -1220,6 +1245,7 @@ body {
   background: rgba(252, 252, 252, 0.3);
   padding: 8px 24px;
   border-radius: 20px;
+  margin-top: 8px;
   margin-bottom: 0;
 }
 
@@ -1245,6 +1271,7 @@ body {
   background-color: transparent;
   border: none;
   appearance: textfield;
+  outline: none;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1317,12 +1344,12 @@ body {
 
 .toggle-min {
   top: -13px;
-  left: -10px;
+  left: -16px;
 }
 
 .toggle-max {
   top: -13px;
-  right: -20px;
+  right: -35px;
 }
 
 
@@ -1335,9 +1362,9 @@ body {
   background: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
   border-radius: 20px;
-  margin-top: 38px;
   padding-top: 8px;
   padding-bottom: 8px;
+  margin-top: 28px;
 }
 
 .button-filter:hover {
@@ -1373,12 +1400,16 @@ body {
 }
 
 .pagination-container {
+  position: relative;
   display: flex;
   padding-top: 41px;
   padding-bottom: 41px;
+  justify-content: flex-end;
+  margin-bottom: 40px;
 }
 
 .pagination {
+  justify-self: flex-end;
   display: flex;
   margin: 0;
   padding: 0;
@@ -1386,9 +1417,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
-
 }
+
 .pagination-show-more {
+  position: absolute;
+  left: 490px;
   padding: 12px 32px;
   margin: auto;
   border-radius: 26px;
@@ -1633,7 +1666,7 @@ body {
 }
 
 
-.popover-catalg {
+.popover-catalog {
   position: absolute;
   top: 40px;
   left: 0;
@@ -1653,12 +1686,15 @@ body {
   padding: 0;
 }
 
-.catalog-menu-item:not(:last-child) {
-  padding-bottom: 6px;
+.catalog-menu-item {
   font-size: 14px;
   line-height: 20px;
+  cursor: pointer;
 }
 
+.catalog-menu-item:not(:last-child) {
+  padding-bottom: 6px;
+}
 
 .catalog-menu-item:first-child {
   padding-bottom: 8px;
