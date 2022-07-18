@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="image/favicon-32x32.png">
   </head>
   <body>
     <div class="page-container">
@@ -61,7 +63,7 @@
                   <ul class="cart-items-list">
                     <li class="cart-item">
                       <div class="wrapper-item-cart">
-                        <img class="image-cart-item" src="image/pop_over/cart-strawberry.png" width="46" height="46">
+                        <img class="image-cart-item" src="image/pop-over/cart-strawberry.png" width="46" height="46" alt="мороженое малинка">
                         <p class="cart-item-title">
                           <span class="title-item">Малинка</span>
                           <span class="description-item-cart">1 кг х 310 ₽</span>
@@ -79,7 +81,7 @@
                     </li>
                     <li class="cart-item">
                       <div class="wrapper-item-cart">
-                        <img class="image-cart-item" src="image/pop_over/cart-buble-gum.png" width="46" height="46px">
+                        <img class="image-cart-item" src="image/pop-over/cart-buble-gum.png" width="46" height="46" alt="мороженое бабл-га">
                         <p class="cart-item-title">
                           <span class="title-item">Бабл-гам</span>
                           <span class="description-item-cart">1,5 кг х 320 ₽</span>
@@ -112,7 +114,7 @@
               <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Каталог</a>
+              <a class="breadcrumbs-link breadcrumbs-link-current">Каталог</a>
             </li>
           </ul>
           <h1 class="header-title">Сливочное мороженое</h1>
@@ -123,7 +125,7 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <div class="wrapper-first-row-filter">
               <label class="label-sorting">
-               <span class="wrapper-name">Сортировка:</span>
+               <span class="catalog-filter-title">Сортировка:</span>
                <select class="select-control">
                 <option value="popular">по популярности</option>
                 <option value="cheap">сначала дешевле</option>
@@ -131,7 +133,7 @@
                </select>
               </label>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title visually-hidden">Цена:</legend>
+                <legend class="visually-hidden">Цена:</legend>
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label">
@@ -143,10 +145,13 @@
                   </div>
                   <div class="wrapper-range-scale">
                      <div class="range-scale">
-                      <div class="range-bar" style="left:42px;width:54px;">
+                      <div class="range-bar" style="left:38px;width:56px;">
                         <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Минимальная цена.</span>
                         </button>
-                        <button class="range-toggle toggle-max" type="button"></button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Максимальная цена.</span>
+                        </button>
                       </div>
                      </div>
                 </div>
@@ -259,7 +264,7 @@
                 <p class="description-item">Сливочное мороженое с малиновым джемом</p>
                 <div class="product-card-price-container">
                   <b class="item-price">310 ₽/кг</b>
-                  <button class="product-card-button">
+                  <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                      Корзина
                     </span>
@@ -276,7 +281,7 @@
                 <p class="description-item">Фисташковый пломбир с кусочками шоколада</p>
                 <div class="product-card-price-container">
                   <b class="item-price">340 ₽/кг</b>
-                  <button class="product-card-button">
+                  <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                      Корзина
                     </span>
@@ -293,7 +298,7 @@
                 <p class="description-item">Крем-брюле с черничным джемом</p>
                 <div class="product-card-price-container">
                 <b class="item-price">330 ₽/кг</b>
-                <button class="product-card-button" href="#">
+                <button class="product-card-button" type="button">
                   <span class="visually-hidden">
                    Корзина
                   </span>
@@ -310,7 +315,7 @@
                  <p class="description-item">Ванильный пломбир со сладкой посыпкой</p>
                 <div class="product-card-price-container">
                   <b class="item-price">320 ₽/кг</b>
-                  <button class="product-card-button" href="#">
+                  <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                      Корзина
                     </span>
@@ -319,7 +324,7 @@
               </div>
             </li>
             <li class="product-card">
-               <img class="product-card-image" src="image/catalog/product-5.jpg" width="168" height="168">
+               <img class="product-card-image" src="image/catalog/product-5.jpg" width="168" height="168" alt="мороженое ежевика">
               <div class="wrapper-item">
                 <a class="product-card-link" href="product.html">
                   <h3 class="name-item">Ежевика</h3>
@@ -327,7 +332,7 @@
                 <p class="description-item">Сливочное мороженое с ежевичным джемом</p>
                 <div class="product-card-price-container">
                   <b class="item-price">330 ₽/кг</b>
-                  <button class="product-card-button" href="#">
+                  <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                     Корзина
                     </span>
@@ -344,7 +349,7 @@
                 <p class="description-item">Сливочный пломбир с банановым вкусом</p>
                 <div class="product-card-price-container">
                   <b class="item-price">340 ₽/кг</b>
-                  <button class="product-card-button" href="#">
+                  <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                     Корзина
                     </span>
@@ -361,7 +366,7 @@
                 <p class="description-item">Классический шоколадный пломбир</p>
                 <div class="product-card-price-container">
                   <b class="item-price">270 ₽/кг</b>
-                  <button class="product-card-button" href="#">
+                 <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                     Корзина
                     </span>
@@ -378,7 +383,7 @@
                 <p class="description-item">Сливочный пломбир с клубничным вкусом</p>
                 <div class="product-card-price-container">
                   <b class="item-price">300 ₽/кг</b>
-                  <button class="product-card-button" href="#">
+                 <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                     Корзина
                     </span>
@@ -395,7 +400,7 @@
                 <p class="description-item">Освежающий лимонный сорбет</p>
                 <div class="product-card-price-container">
                   <b class="item-price">310 ₽/кг</b>
-                  <button class="product-card-button" href="#">
+                 <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                     Корзина
                     </span>
@@ -412,7 +417,7 @@
                 <p class="description-item">Сливочный пломбир с ментоловым сиропом</p>
                 <div class="product-card-price-container">
                   <b class="item-price">320 ₽/кг</b>
-                  <button class="product-card-button" href="#">
+                 <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                     Корзина
                     </span>
@@ -429,7 +434,7 @@
                 <p class="description-item">Фисташковый пломбир с шоколадным сиропом</p>
                 <div class="product-card-price-container">
                   <b class="item-price">360 ₽/кг</b>
-                  <button class="product-card-button" href="#">
+                 <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                     Корзина
                     </span>
@@ -446,7 +451,7 @@
                 <p class="description-item">Классическое крем-брюле</p>
                 <div class="product-card-price-container">
                   <b class="item-price">280 ₽</b>
-                  <button class="product-card-button" href="#">
+                 <button class="product-card-button" type="button">
                     <span class="visually-hidden">
                     Корзина
                     </span>
@@ -538,7 +543,10 @@
           </ul>
         </section>
         <section class="about">
-          <img class="logo-htmlacademy" alt="ЛОГО" src="image/logo_htmlacademy.svg" width="93" height="27">
+          <a class="link-logo-academy" href="https://htmlacademy.ru/">
+            <img class="logo-htmlacademy" alt="ЛОГО" src="image/logo-htmlacademy.svg" width="93" height="27">
+            <span class="visually-hidden">Логотип html academy</span>
+          </a>
           <p class="by">Сделано в .html academy © 2021</p>
         </section>
     </footer>
