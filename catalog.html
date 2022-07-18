@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico/favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="image/favicon-32x32.png">
   </head>
   <body>
     <div class="page-container">
@@ -113,7 +114,7 @@
               <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Каталог</a>
+              <a class="breadcrumbs-link breadcrumbs-link-current">Каталог</a>
             </li>
           </ul>
           <h1 class="header-title">Сливочное мороженое</h1>
@@ -146,8 +147,11 @@
                      <div class="range-scale">
                       <div class="range-bar" style="left:38px;width:56px;">
                         <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Минимальная цена.</span>
                         </button>
-                        <button class="range-toggle toggle-max" type="button"></button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Максимальная цена.</span>
+                        </button>
                       </div>
                      </div>
                 </div>
@@ -539,7 +543,10 @@
           </ul>
         </section>
         <section class="about">
-          <img class="logo-htmlacademy" alt="ЛОГО" src="image/logo-htmlacademy.svg" width="93" height="27">
+          <a class="link-logo-academy" href="https://htmlacademy.ru/">
+            <img class="logo-htmlacademy" alt="ЛОГО" src="image/logo-htmlacademy.svg" width="93" height="27">
+            <span class="visually-hidden">Логотип html academy</span>
+          </a>
           <p class="by">Сделано в .html academy © 2021</p>
         </section>
     </footer>

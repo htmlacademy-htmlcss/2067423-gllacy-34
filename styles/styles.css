@@ -428,6 +428,7 @@ body {
 .button-white:focus {
   background: rgba(252, 252, 252, 0.5);
   border: 2px solid #2D3440;
+  margin: 2px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
@@ -506,6 +507,7 @@ body {
 
 .button-pink:focus {
   border: 2px solid #2D3440;
+  margin: 2px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   outline: none;
 }
@@ -553,14 +555,30 @@ body {
 }
 
 .gifts {
-  display: flex;
+  position: relative;
   background-color: #FF7799;
   border-radius: 16px;
 }
 
 .wrapper-promo {
+  width: 328px;
   padding: 36px;
   padding-right: 0;
+  margin: 0;
+}
+
+.raspeberry .wrapper-promo::after {
+  content: url(../image/index/raspberry.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.marshmallow .wrapper-promo::after {
+  content: url(../image/index/marshmallow.png);
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .promo-gifts {
@@ -978,7 +996,6 @@ body {
   display: block;
   height: 24px;
   background-size: 24px 24px;
-  border: 2px solid rgba(252, 252, 252, 0.3);
   border-radius: 100%;
   outline: none;
   box-sizing: border-box;
@@ -990,11 +1007,18 @@ body {
 
 .social-icon {
   fill: #FCFCFC;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 100%;
 }
 
 .social-link:hover {
   background: #2D3440;
-  border-radius: 24px;
+  border-radius: 100%;
+}
+
+.social-icon:hover {
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 100%;
 }
 
 
@@ -1073,13 +1097,31 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: relative;
 }
+
 .breadcrumbs-link {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
   margin-right: 28px;
+  text-decoration: none;
+}
+
+
+.breadcrumbs-item:first-child .breadcrumbs-link::after {
+  content: url(../image/catalog/arrow-breadcrumbs.svg);
+  position: absolute;
+  width: 7px;
+  height: 6px;
+  top: 1px;
+  left: 68px;
+}
+
+
+.breadcrumbs-link-current {
+  border-bottom: 1px solid #2D3440;
 }
 
 .header-title {
@@ -1128,7 +1170,6 @@ body {
 
 .select-control {
   width: 100%;
-  border: none;
   background: rgba(252, 252, 252, 0.3);
   padding: 8px 16px;
   padding-right: 13px;
@@ -1141,6 +1182,18 @@ body {
   background-position: right 14px center;
   appearance: none;
   outline: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.select-control:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.select-control:focus {
+  box-sizing: border-box;
+  border: 2px solid #FCFCFC;
+  border-radius: 26px;
 }
 
 .control-radio {
@@ -1156,6 +1209,7 @@ body {
   background-image: url(../image/catalog/hover-radio.svg);
 }
 
+
 .control-radio:disabled {
   background-image: url(../image/catalog/disabled-radio.svg);
 }
@@ -1165,7 +1219,7 @@ body {
 }
 
 .control-input[type="radio"]:checked + .control-radio:hover {
-  background-image: url(../image/catalog/radio-hover-checkedsvg.svg)
+  background-image: url(../image/catalog/radio-hover-checked.svg)
 }
 
 .control-input[type="radio"]:checked + .control-radio:disabled {
@@ -1255,6 +1309,10 @@ body {
   margin-bottom: 0;
 }
 
+.catalog-filter-list:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
 .filter-fillers {
   width: 604px;
 }
@@ -1292,6 +1350,11 @@ body {
   background: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
   margin-top: 8px;
+  cursor: pointer;
+}
+
+.wrapper-range-scale:hover {
+  background: rgba(252, 252, 252, 0.5);
 }
 
 .range-scale {
@@ -1376,6 +1439,18 @@ body {
 .button-filter:hover {
   background: #FCFCFC;
   border: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.button-filter:focus {
+  border: 2px solid #2D3440;
+  border-radius: 20px;
+  outline: none;
+}
+
+.button-filter {
+  background: rgba(252, 252, 252, 0.5);
+  border-radius: 20px;
+  bo
 }
 
 .product-list {
